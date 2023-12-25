@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Honzovy vtipy</title>
+</head>
+<body>
+    <header class = "header">
+        <h1>Honzovy vtipy a hádanky</h1>
+    </header>
+
+    <nav class="menu">
+
+        <input type="checkbox" class="menu__checkbox" id="menu-checkbox">
+        <label for="menu-checkbox" class="menu__toggler">☰ Menu</label>
+    
+        <ul class="menu__list">
+            <li class="menu__item {{ 'menu__item--active' if page.fileSlug==='' }}"><a class="menu__link" href="/"><img src="../images/home-page.svg" alt="Rozcestník"></a></li>
+            <li class="menu__item {{ 'menu__item--active' if page.fileSlug==='hadanky' }}"><a class="menu__link" href="/hadanky/">Hádanky</a></li>
+            <li class="menu__item {{ 'menu__item--active' if page.fileSlug==='matematicke' }}"><a class="menu__link" href="/matematicke/">Matematické vtipy</a></li>
+            <li class="menu__item {{ 'menu__item--active' if page.fileSlug==='pocitace_a_it' }}"><a class="menu__link" href="/pocitace_a_it/">Počítače a IT</a></li>
+            <li class="menu__item {{ 'menu__item--active' if page.fileSlug==='opepickovi' }}"><a class="menu__link" href="/opepickovi/">O Pepíčkovi</a></li>
+            <li class="menu__item {{ 'menu__item--active' if page.fileSlug==='opolicii' }}"><a class="menu__link" href="/opolicii/">O policii</a></li>
+            <li class="menu__item {{ 'menu__item--active' if page.fileSlug==='englishyokes' }}"><a class="menu__link" href="/englishyokes/">English yokes</a></li>
+            <li class="menu__item {{ 'menu__item--active' if page.fileSlug==='ostatni' }}"><a class="menu__link" href="/ostatni/">Ostatní vtipy</a></li>
+            
+        </ul>
+    
+    </nav>
+
+    <div class="vtipy"> 
+        <div class = "vtip">
+            <h3>Pepíčkova svačina</h3>
+            <p>Maminka: „Pepíčku co to papáš?“<br>
+            Pepíček: „Vteřinový hm hm hmm.“
+            </p>
+        </div>  
+        <div class = "vtip">
+            <h3>Dopis prarodičům</h3>
+            <p>Píše vnouček dopis prarodičům: Ahoj dědečku a babičko, ve škole nám řekli, že se nesmí lhát a měli bychom se ke všem lžím přiznat. Tak Vám teda píšu. Přes prázdniny jsem potajmu otevřel jednu z těch velkých sklenic se švestkovou marmeládou a téměř celou jsem ji snědl. Abyste na to nepřišli, tak jsem do ní na.ral a vrátil ji na polici. Děda dočetl, babce vlepil facku a řekl: Já ti říkal, že je to ho.no – a ty pořád jenom: zcukernatěla, zcukernatěla…</p>
+        </div>
+        <div class = "vtip">
+            <h3>Nábožný učitel </h3>
+            <p>„Jak dopadla tvoje poslední zkouška, Pepíčku?“ ptá se matka „Vynikajícně, mami. Pan učitel byl velmi přívětivý a nábožný.“ <br>
+                „Jak to nábožný?“ <br>
+                „Po každé mé odpovědi sepjal ruce a řekl Bože můj!“
+                </p>
+        </div>
+        <div class = "vtip">
+            <h3>Pětka z matiky</h3>
+            <p>Přijde Pepíček ze školy a povídá tatínkovi, že dostal pětku z matiky. <br>
+                „Jak to?“ ptá se podrážděně otec. „Nejdříve se mě učitelka zeptala, kolik je třikrát dva. A já jí povídám, že šest,“ vypráví Pepíček. <br>
+                No, to je správně,“ na to tatík. „A pak se mě zeptala, kolik je dvakrát tři,“ pokračuje Pepíček. <br>
+                A jaký je v tom, do prkýnka, rozdíl?“ rozčílí se tatík. Pepíček pokrčí rameny. „Přesně to jsem řekl.“ <br>
+                </p>
+        </div>
+        <div class = "vtip">
+            <h3>Tažní ptáci</h3>
+            <p>Paní učitelka se ptá své třídy: „Proč na podzim odlétají ptáci do teplých krajin?“ <br>
+                A Pepíček odpoví: „Aby se vyhnuli škole!“
+            </p>
+        </div>
+    </div> 
+
+    <footer class = "footer">
+        <p>&#169 Jan Cach</p>
+    </footer>
+</body>
+</html>
