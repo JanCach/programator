@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Honzovy vtipy</title>
+</head>
+<body>
+    <header class = "header">
+        <h1>Honzovy vtipy a hádanky</h1>
+    </header>
+
+    <nav class="menu">
+
+        <input type="checkbox" class="menu__checkbox" id="menu-checkbox">
+        <label for="menu-checkbox" class="menu__toggler">☰ Menu</label>
+    
+        <ul class="menu__list">
+            <li class="menu__item {{ 'menu__item--active' if page.fileSlug==='' }}"><a class="menu__link" href="/"><img src="../images/home-page.svg" alt="Rozcestník"></a></li>
+            <li class="menu__item {{ 'menu__item--active' if page.fileSlug==='hadanky' }}"><a class="menu__link" href="/hadanky/">Hádanky</a></li>
+            <li class="menu__item {{ 'menu__item--active' if page.fileSlug==='matematicke' }}"><a class="menu__link" href="/matematicke/">Matematické vtipy</a></li>
+            <li class="menu__item {{ 'menu__item--active' if page.fileSlug==='pocitace_a_it' }}"><a class="menu__link" href="/chucknorris/">Počítače a IT</a></li>
+            <li class="menu__item {{ 'menu__item--active' if page.fileSlug==='opepickovi' }}"><a class="menu__link" href="/opepickovi/">O Pepíčkovi</a></li>
+            <li class="menu__item {{ 'menu__item--active' if page.fileSlug==='opolicii' }}"><a class="menu__link" href="/opolicii/">O policii</a></li>
+            <li class="menu__item {{ 'menu__item--active' if page.fileSlug==='englishyokes' }}"><a class="menu__link" href="/englishyokes/">English yokes</a></li>
+            <li class="menu__item {{ 'menu__item--active' if page.fileSlug==='ostatni' }}"><a class="menu__link" href="/ostatni/">Ostatní vtipy</a></li>
+            
+        </ul>
+    
+    </nav>
+
+    {{ content | safe }}
+
+    <footer class = "footer">
+        <p>&#169 Jan Cach</p>
+    </footer>
+</body>
+</html>
